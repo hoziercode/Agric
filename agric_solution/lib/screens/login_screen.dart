@@ -1,5 +1,5 @@
 import 'package:agric_solution/screens/SignUpScreens/SignUp_screen.dart';
-import 'package:agric_solution/screens/Store_screen.dart';
+import 'package:agric_solution/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 import '../buttons/buttons.dart';
 import '../buttons/input_button.dart';
@@ -113,7 +113,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 Buttons(
                   text: 'Login',
                   onPress: () {
-                    Navigator.pushNamed(context, StoreScreen.id);
+                    Navigator.pushNamed(context, HomeScreen.id);
                   },
                   colour: const Color(0xFF5DE898),
                   color: Colors.white,

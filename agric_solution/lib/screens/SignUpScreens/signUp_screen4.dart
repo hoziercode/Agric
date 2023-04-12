@@ -2,7 +2,7 @@
 
 import 'package:agric_solution/buttons/buttons.dart';
 import 'package:agric_solution/buttons/input_button.dart';
-import 'package:agric_solution/screens/Store_screen.dart';
+import 'package:agric_solution/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 
 class SignUpScreen4 extends StatefulWidget {
@@ -157,7 +157,7 @@ class _SignUpScreen4State extends State<SignUpScreen4> {
                           child: Buttons(
                             text: 'Sign Up',
                             onPress: () {
-                              Navigator.pushNamed(context, StoreScreen.id);
+                              Navigator.pushNamed(context, HomeScreen.id);
                             },
                             colour: const Color(0xFF5DE898),
                             color: Colors.white,

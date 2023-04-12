@@ -9,6 +9,7 @@ import './screens/SignUpScreens/signUp_screen3.dart';
 import './screens/SignUpScreens/signUp_screen4.dart';
 import './screens/Store_screen.dart';
 import './screens/purchase_screen.dart';
+import './screens/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -31,7 +32,9 @@ class MyApp extends StatelessWidget {
         SignUpScreen3.id: (context) => const SignUpScreen3(),
         SignUpScreen4.id: (context) => const SignUpScreen4(),
         StoreScreen.id: (context) => const StoreScreen(),
-         PurchaseScreen.id: (context) => const PurchaseScreen(),
+        PurchaseScreen.id: (context) => const PurchaseScreen(),
+        HomeScreen.id: (context) => const HomeScreen(),
+
       },
     );
   }

@@ -40,7 +40,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
           child: Padding(
             padding: const EdgeInsets.symmetric(
               horizontal: 20.0,
-              vertical: 20.0,
+              vertical: 5.0,
             ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -97,6 +97,29 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                             ),
                           ),
                         ),
+                        Padding(
+                          padding: const EdgeInsets.only(bottom: 20.0),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children:
+                                List<Widget>.generate(images.length, (index) {
+                              return AnimatedContainer(
+                                duration: const Duration(milliseconds: 300),
+                                width: currentIndex == index ? 30.0 : 8.0,
+                                height: 6.0,
+                                margin: const EdgeInsets.only(left: 5.0),
+                                decoration: BoxDecoration(
+                                  borderRadius: const BorderRadius.all(
+                                    Radius.circular(30.0),
+                                  ),
+                                  color: currentIndex == index
+                                      ? Colors.white
+                                      : Colors.grey,
+                                ),
+                              );
+                            }),
+                          ),
+                        )
                       ],
                     ),
                   ),
